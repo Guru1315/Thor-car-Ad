@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="THAR — Born Unstoppable (animated banner)">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="0.62" stop-color="#121212"/>
+      <stop offset="1" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3d77a"/>
+      <stop offset="0.5" stop-color="#e8c14c"/>
+      <stop offset="1" stop-color="#b8941c"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e8c14c" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#e8c14c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <mask id="floorMask"><rect x="0" y="222" width="1200" height="138" fill="url(#fade)"/></mask>
+    <clipPath id="textClip">
+      <text x="600" y="190" text-anchor="middle" font-family="'Bebas Neue','Oswald','Impact','Arial Narrow',sans-serif" font-size="150" letter-spacing="18">THAR</text>
+    </clipPath>
+    <style>
+      /* Perspective floor: horizontal lines rush toward the viewer */
+      .h { stroke:#e8c14c; stroke-opacity:.35; stroke-width:1.2; animation: rush 2.4s linear infinite; transform-box: view-box; transform-origin: 600px 222px; }
+      .h2 { animation-delay:-.6s } .h3 { animation-delay:-1.2s } .h4 { animation-delay:-1.8s }
+      @keyframes rush { from { transform: scaleY(0); opacity:0 } 15% { opacity:1 } to { transform: scaleY(1); opacity:1 } }
+      /* Wordmark turns on its vertical axis like a 3D badge */
+      .word { transform-box: fill-box; transform-origin: center; animation: turn 6s cubic-bezier(.65,0,.35,1) infinite; }
+      @keyframes turn { 0%, 30% { transform: scaleX(1) } 45% { transform: scaleX(.06) } 60%, 100% { transform: scaleX(1) } }
+      .shadow { transform-box: fill-box; transform-origin: center; animation: turn 6s cubic-bezier(.65,0,.35,1) infinite; }
+      .beam { animation: beam 3.2s ease-in-out infinite; }
+      @keyframes beam { from { transform: translateX(-420px) skewX(-20deg) } to { transform: translateX(1100px) skewX(-20deg) } }
+      .pulse { animation: pulse 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes pulse { 0%,100% { opacity:.55; transform: scale(1) } 50% { opacity:1; transform: scale(1.08) } }
+      .tag { animation: blink 3s ease-in-out infinite; }
+      @keyframes blink { 0%,100% { opacity:.55 } 50% { opacity:.95 } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#sky)"/>
+
+  <!-- floor grid with vanishing point at (600, 222) -->
+  <g mask="url(#floorMask)">
+    <g stroke="#e8c14c" stroke-opacity=".22" stroke-width="1">
+      <line x1="600" y1="222" x2="-600" y2="360"/><line x1="600" y1="222" x2="-200" y2="360"/>
+      <line x1="600" y1="222" x2="150" y2="360"/><line x1="600" y1="222" x2="420" y2="360"/>
+      <line x1="600" y1="222" x2="600" y2="360"/><line x1="600" y1="222" x2="780" y2="360"/>
+      <line x1="600" y1="222" x2="1050" y2="360"/><line x1="600" y1="222" x2="1400" y2="360"/>
+      <line x1="600" y1="222" x2="1800" y2="360"/>
+    </g>
+    <line class="h"    x1="-200" y1="360" x2="1400" y2="360"/>
+    <line class="h h2" x1="-200" y1="360" x2="1400" y2="360"/>
+    <line class="h h3" x1="-200" y1="360" x2="1400" y2="360"/>
+    <line class="h h4" x1="-200" y1="360" x2="1400" y2="360"/>
+  </g>
+  <line x1="0" y1="222" x2="1200" y2="222" stroke="#e8c14c" stroke-opacity=".35"/>
+
+  <ellipse class="pulse" cx="600" cy="140" rx="330" ry="110" fill="url(#glow)"/>
+
+  <text x="600" y="62" text-anchor="middle" font-family="Inter,'Segoe UI',Arial,sans-serif" font-size="13" letter-spacing="7" fill="#ffffff" fill-opacity=".45">MAHINDRA THAR ROXX · SCROLL-DRIVEN 3D AD</text>
+
+  <!-- extruded wordmark: stacked offsets fake depth, then the gold face -->
+  <g class="shadow" fill="#3a2d08">
+    <text x="606" y="196" text-anchor="middle" font-family="'Bebas Neue','Oswald','Impact','Arial Narrow',sans-serif" font-size="150" letter-spacing="18">THAR</text>
+    <text x="604" y="194" text-anchor="middle" font-family="'Bebas Neue','Oswald','Impact','Arial Narrow',sans-serif" font-size="150" letter-spacing="18" fill="#6b5212">THAR</text>
+    <text x="602" y="192" text-anchor="middle" font-family="'Bebas Neue','Oswald','Impact','Arial Narrow',sans-serif" font-size="150" letter-spacing="18" fill="#8e6d17">THAR</text>
+  </g>
+  <g class="word">
+    <text x="600" y="190" text-anchor="middle" font-family="'Bebas Neue','Oswald','Impact','Arial Narrow',sans-serif" font-size="150" letter-spacing="18" fill="url(#gold)">THAR</text>
+    <g clip-path="url(#textClip)">
+      <rect class="beam" x="0" y="40" width="140" height="180" fill="url(#sweep)"/>
+    </g>
+  </g>
+
+  <text class="tag" x="600" y="262" text-anchor="middle" font-family="Inter,'Segoe UI',Arial,sans-serif" font-size="18" letter-spacing="10" fill="#ffffff">BORN UNSTOPPABLE</text>
+  <text x="600" y="300" text-anchor="middle" font-family="Inter,'Segoe UI',Arial,sans-serif" font-size="12" letter-spacing="4" fill="#e8c14c" fill-opacity=".8">NEXT.JS 16 · GSAP SCROLLTRIGGER · LENIS · 480-FRAME CANVAS SEQUENCES</text>
+</svg>
