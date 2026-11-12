@@ -84,3 +84,4 @@ ctx.drawImage(img, dx, dy, dw, dh);
 - Keep scroll, scrub and canvas draws on **one clock** (GSAP ticker + Lenis).
 - Never resize or clear a canvas during an animation; size it once per viewport change.
 - Decode images ahead of time; never decode mid-scroll if avoidable.
+## Experiance this at my live site which is added on that README section
