@@ -80,11 +80,6 @@ This repo holds the **assets, screenshots and documentation** only. The site's s
 
 ## 🧰 Stack
 
-Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · GSAP 3 + ScrollTrigger · Framer Motion 12 · Lenis · deployed on Vercel
-
-## 🙏 Credits
-
-- Original design, frame sequences and Vite prototype: [`alagappan567/THAR`](https://github.com/alagappan567/THAR)
-- Next.js base: [`JCodesMore/ai-website-cloner-template`](https://github.com/JCodesMore/ai-website-cloner-template)
+Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · GSAP 3 + ScrollTrigger · Framer Motion 12 · Lenis · deployed on Vercel.
 
 > This is an unofficial concept / portfolio ad. *Mahindra*, *Thar* and *Roxx* are trademarks of Mahindra & Mahindra Ltd. This project is not affiliated with or endorsed by Mahindra.
