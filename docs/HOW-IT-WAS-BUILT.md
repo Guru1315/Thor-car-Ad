@@ -44,8 +44,8 @@ Also tried and **reverted**: decoding frames into a sliding window of `ImageBitm
 ## 4. Verify and deploy
 
 ```bash
-npm run check          # eslint + tsc --noEmit + next build
-npm start              # production server for local testing
+npm run check       
+npm start             
 npx vercel deploy --prod
 ```
 
