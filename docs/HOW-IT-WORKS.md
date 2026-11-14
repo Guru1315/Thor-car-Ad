@@ -57,8 +57,8 @@ tl.to(cp, { frame: 79, ease: "none", onUpdate: () => drawFrame(Math.round(cp.fra
 
 ```ts
 const ia = img.naturalWidth / img.naturalHeight, ca = W / H;
-if (ca > ia) { dw = W; dh = W / ia; dx = 0; dy = (H - dh) / 2; }   // crop top/bottom
-else         { dh = H; dw = H * ia; dy = 0; dx = (W - dw) / 2; }   // crop sides
+if (ca > ia) { dw = W; dh = W / ia; dx = 0; dy = (H - dh) / 2; }  
+else         { dh = H; dw = H * ia; dy = 0; dx = (W - dw) / 2; }   
 ctx.drawImage(img, dx, dy, dw, dh);
 ```
 
